@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controllers",
+    "\\Domain",
+    "\\Domain\\DTOs",
+    "\\Domain\\Models",
+    "\\Migrations"
+  ],
+  "SelectedNode": "\\Migrations",
+  "PreviewInSolutionExplorer": false
+}
