@@ -23,9 +23,23 @@ namespace SagitarioRhApi.Infraestrutura.Repositorios
         public async Task Cadastro(FuncionarioModel funcionario)
         {
 
-            var novoFuncionario = await _context.funcionarios.AddAsync(funcionario);
-            await _impostoCalcular.CalcularINSS(novoFuncionario.Entity);
-            await _context.SaveChangesAsync();
+            var existe = await _context.funcionarios.AnyAsync(f => f.matricula == funcionario.matricula);
+
+            if (!existe)
+            {
+                var novoFuncionario = await _context.funcionarios.AddAsync(funcionario);
+                await _context.SaveChangesAsync();
+
+                await _impostoCalcular.CalcularINSS(novoFuncionario.Entity);
+                await _context.SaveChangesAsync();
+            }
+
+            else
+            {
+
+                throw new Exception("Tentativa de inserir um funcionário duplicado.");
+
+            }
 
         }
 

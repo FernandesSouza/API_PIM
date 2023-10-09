@@ -24,6 +24,7 @@ AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IFuncionario, RepFun>();
 builder.Services.AddScoped<IImpostoCalcular, InssCalcular>();
+builder.Services.AddScoped<IHolerite, Holerite>();
 builder.Services.AddAutoMapper(typeof(DomainMapping));
 
 

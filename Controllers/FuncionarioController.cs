@@ -28,15 +28,16 @@ namespace SagitarioRhApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Cadastro(FuncionarioModel funcionario)
         {
-
-            if (ModelState.IsValid)
+            try
             {
                 await _repFun.Cadastro(funcionario);
-
                 return Ok();
             }
-
-            return BadRequest(ModelState);
+            catch (Exception ex)
+            {
+               
+                return BadRequest(ex.Message);
+            }
 
         }
 

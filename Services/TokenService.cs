@@ -28,7 +28,8 @@ namespace SagitarioRhApi.Services
 
                 new Claim(JwtRegisteredClaimNames.NameId, funcionario.usuario!),
                 new Claim(JwtRegisteredClaimNames.Sub, funcionario.senha!),
-                new Claim(ClaimTypes.Role, "Funcionario")
+                new Claim(ClaimTypes.Role, "Funcionario"),
+                new Claim("Matricula", funcionario.matricula.ToString())
 
 
 
@@ -70,7 +71,8 @@ namespace SagitarioRhApi.Services
 
                 new Claim(JwtRegisteredClaimNames.NameId, gerente.usuario!),
                 new Claim(JwtRegisteredClaimNames.Sub, gerente.senha!),
-                new Claim(ClaimTypes.Role, "Gerente")
+                new Claim(ClaimTypes.Role, "Gerente"),
+                new Claim("Idempresa", gerente.idempresa.ToString()!)
 
 
 

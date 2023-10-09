@@ -5,8 +5,10 @@
     "\\Domain",
     "\\Domain\\DTOs",
     "\\Domain\\Models",
+    "\\Infraestrutura",
+    "\\Infraestrutura\\Repositorios",
     "\\Migrations"
   ],
-  "SelectedNode": "\\Migrations",
+  "SelectedNode": "\\SagitarioRhApi.sln",
   "PreviewInSolutionExplorer": false
 }
