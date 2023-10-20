@@ -3,11 +3,11 @@
     "",
     "\\Controllers",
     "\\Domain",
-    "\\Domain\\DTOs",
     "\\Domain\\Models",
     "\\Infraestrutura",
     "\\Infraestrutura\\Repositorios",
-    "\\Migrations"
+    "\\Migrations",
+    "\\Services"
   ],
   "SelectedNode": "\\SagitarioRhApi.sln",
   "PreviewInSolutionExplorer": false

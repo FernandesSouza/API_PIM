@@ -18,6 +18,7 @@ namespace SagitarioRH.Models
         public string? funcao { get; set; }
         public string? setor { get; set; }
         public string? evento { get; set; }
+        public string? cpf { get; set; }
 
        
 

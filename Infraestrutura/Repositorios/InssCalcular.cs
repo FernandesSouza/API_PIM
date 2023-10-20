@@ -68,6 +68,7 @@ namespace SagitarioRhApi.Infraestrutura.Repositorios
                     folhaPagamento.idempresa = item.idempresa;
                     folhaPagamento.datapgto = DateTime.Now;
                     folhaPagamento.setor = item.setor;
+                    folhaPagamento.cpf = item.cpf;
                     
 
 

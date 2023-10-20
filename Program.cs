@@ -18,6 +18,15 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddCors(options => 
+options.AddDefaultPolicy(policy =>
+{
+    policy.AllowAnyOrigin();
+    policy.AllowAnyMethod();
+    policy.AllowAnyHeader();
+
+
+}));
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
@@ -107,6 +116,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors();
 
 app.UseAuthentication();
 

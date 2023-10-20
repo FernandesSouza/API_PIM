@@ -35,7 +35,7 @@ namespace SagitarioRhApi.Controllers
             }
             catch (Exception ex)
             {
-               
+                
                 return BadRequest(ex.Message);
             }
 

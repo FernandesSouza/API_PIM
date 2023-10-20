@@ -14,6 +14,23 @@ namespace SagitarioRhApi.Infraestrutura.Repositorios
             _context = context;
         }
 
+        public async Task<FolhaPgtoModel> ConsultarHolerite(int matFuncionario)
+        {
+            var holerite = await _context.folhaPgto.SingleOrDefaultAsync(h => h.matfuncionario == matFuncionario);
+
+            if(holerite == null)
+            {
+
+                throw new Exception("Ocorreu um problema, consulte a administração");
+                    
+            } else
+            {
+
+                return holerite;
+
+            }
+        }
+
         public async Task<IEnumerable<FolhaPgtoModel>> FolhaPagamento(string setor, int idempresa)
         {
             var folha = await _context.folhaPgto.Where(f => f.setor!.Contains(setor) && f.idempresa == idempresa).ToListAsync();
@@ -34,13 +51,19 @@ namespace SagitarioRhApi.Infraestrutura.Repositorios
 
             if (holerite == null)
             {
-                throw new InvalidOperationException("Holerite não encontrado"); // Ou você pode retornar null ou outro valor apropriado
+                throw new InvalidOperationException("Holerite não encontrado"); 
             }
 
             return holerite;
 
 
 
+        }
+
+        public async Task<IEnumerable<FolhaPgtoModel>> RetornarFolhaPgto()
+        {
+            return await _context.folhaPgto.ToListAsync();
+            
         }
     }
 }

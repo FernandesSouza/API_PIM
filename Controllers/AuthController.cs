@@ -9,6 +9,7 @@ using SagitarioRhApi.Infraestrutura.Data;
 using SagitarioRhApi.Infraestrutura.Interfaces;
 using SagitarioRhApi.Services;
 using SagitarioRHDesktop.Models;
+using System.Data;
 
 namespace SagitarioRhApi.Controllers
 {
@@ -36,7 +37,7 @@ namespace SagitarioRhApi.Controllers
                 var token = _tokenService.GerarToken(funcionario);
 
 
-                return Ok(new { Token = token, Funcionario = funcionario });
+                return Ok(new { Token = token, Funcionario = funcionario});
             }
             else {
 

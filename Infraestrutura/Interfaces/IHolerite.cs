@@ -8,5 +8,9 @@ namespace SagitarioRhApi.Infraestrutura.Interfaces
 
         Task<IEnumerable<FolhaPgtoModel>> FolhaPagamento(string setor, int idempresa);
 
+        Task<IEnumerable<FolhaPgtoModel>> RetornarFolhaPgto();
+
+        Task<FolhaPgtoModel> ConsultarHolerite(int matFuncionario);
+
     }
 }
