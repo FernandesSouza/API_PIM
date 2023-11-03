@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using SagitarioRH.Models;
 using SagitarioRhApi.Infraestrutura.Data;
 using SagitarioRhApi.Infraestrutura.Interfaces;
 using SagitarioRHDesktop.Models;
@@ -45,10 +46,13 @@ namespace SagitarioRhApi.Infraestrutura.Repositorios
 
         public async Task<FuncionarioModel> ConsultarFuncionario(int matricula)
         {
-
             return await _context.funcionarios.FirstAsync(f => f.matricula == matricula);
 
+        }
 
+        public async Task<IEnumerable<FolhaPgtoModel>> Holerites()
+        {
+            return await _context.folhaPgto.ToListAsync();
         }
     }
 }

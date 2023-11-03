@@ -1,3 +1,5 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -30,6 +32,11 @@ options.AddDefaultPolicy(policy =>
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
+
+builder.Services.AddValidatorsFromAssemblyContaining<CreateFuncionarioValidator>();
+builder.Services.AddFluentValidationAutoValidation();
+
+builder.Services.AddScoped<IMobile, RepMobile>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IFuncionario, RepFun>();
 builder.Services.AddScoped<IImpostoCalcular, InssCalcular>();

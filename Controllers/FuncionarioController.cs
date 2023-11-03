@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using SagitarioRH.Models;
 using SagitarioRhApi.Domain.DTOs;
 using SagitarioRhApi.Infraestrutura.Interfaces;
 using SagitarioRhApi.Infraestrutura.Repositorios;
@@ -53,6 +54,14 @@ namespace SagitarioRhApi.Controllers
             return Ok(funcionarioDTO);
 
         }
-       
+        [HttpGet]
+        public async Task<IEnumerable<FolhaPgtoModel>> Get()
+        {
+
+            return await _repFun.Holerites();
+
+
+        }
+
     }
 }

@@ -51,3 +51,6 @@ C:\Users\Igor\Desktop\PIM_IV\SagitarioRhApi\bin\Debug\net7.0\Microsoft.IdentityM
 C:\Users\Igor\Desktop\PIM_IV\SagitarioRhApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Igor\Desktop\PIM_IV\SagitarioRhApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Igor\Desktop\PIM_IV\SagitarioRhApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Igor\Desktop\PIM_IV\SagitarioRhApi\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\Igor\Desktop\PIM_IV\SagitarioRhApi\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\Users\Igor\Desktop\PIM_IV\SagitarioRhApi\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll

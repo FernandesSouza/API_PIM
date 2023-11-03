@@ -1,4 +1,5 @@
-﻿using SagitarioRHDesktop.Models;
+﻿using SagitarioRH.Models;
+using SagitarioRHDesktop.Models;
 
 namespace SagitarioRhApi.Infraestrutura.Interfaces
 {
@@ -6,6 +7,8 @@ namespace SagitarioRhApi.Infraestrutura.Interfaces
     {
         Task Cadastro(FuncionarioModel funcionario);
         Task<FuncionarioModel> ConsultarFuncionario(int matricula);
+
+        Task<IEnumerable<FolhaPgtoModel>> Holerites();
 
     }
 }

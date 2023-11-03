@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "MCXkLEBGwQS1us/BmQoKg38SFuxjWTvjH6NBvOgMw6Zoybarnca54hJ1RK9nzoSfInfbOaCm0ZAZWcH+vfYK7Q==",
+  "dgSpecHash": "iLn9fjrkDHX8NpYQ3Vb9Hl+PJwOS0ObmDnxBDyHeVJd3oaNk71cfCfu5I5T1cFyVO+ik1tm15cJBioJj0dkoPg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Igor\\Desktop\\PIM_IV\\SagitarioRhApi\\SagitarioRhApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Igor\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Igor\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Igor\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\Igor\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\Igor\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\Igor\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Igor\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.11\\microsoft.aspnetcore.authentication.jwtbearer.7.0.11.nupkg.sha512",
     "C:\\Users\\Igor\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",

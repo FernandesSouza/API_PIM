@@ -2,11 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Controllers",
-    "\\Domain",
-    "\\Domain\\Models",
     "\\Infraestrutura",
+    "\\Infraestrutura\\Data",
     "\\Infraestrutura\\Repositorios",
-    "\\Migrations",
     "\\Services"
   ],
   "SelectedNode": "\\SagitarioRhApi.sln",
